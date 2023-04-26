@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS AlbumArtist (
 );
 
 CREATE TABLE IF NOT EXISTS TrackCollection (
-	collection_id INTEGER REFERENCES Album(id),
-	track_id INTEGER REFERENCES Artist(id),
+	collection_id INTEGER REFERENCES collection(id),
+	track_id INTEGER REFERENCES track(id),
 	CONSTRAINT TC PRIMARY KEY (collection_id, track_id)
 );
