@@ -1,4 +1,4 @@
-INSERT INTO genre (title) 
+INSERT INTO genre (title)
 VALUES
 	('Rock'),
 	('Hip-hop'),
@@ -7,7 +7,7 @@ VALUES
 	('Pop');
 
 INSERT INTO artist (name)
-VALUES 
+VALUES
 	('The Doors'),
 	('Red Hot Chili peppers'),
 	('Nirvana'),
@@ -25,7 +25,7 @@ VALUES
 	('Katy Perry');
 
 INSERT INTO album (title, release_year)
-VALUES 
+VALUES
 	('Waiting for the Sun', 1968),
 	('By the Way', 2002),
 	('Nevermind', 1991),
@@ -41,9 +41,9 @@ VALUES
 	('Thriller', 1982),
 	('Super Trouper', 1980),
 	('Empowered', 2020);
-	
+
 INSERT INTO track (title, duration, album_id)
-VALUES 
+VALUES
 	('Love Street', 172, 1),
 	('My Wild Love', 173, 1),
 	('By the way', 216, 2),
@@ -76,7 +76,7 @@ VALUES
 	('Firework', 227, 15);
 
 INSERT INTO collection (title, release_year)
-VALUES 
+VALUES
 	('Favourite', 2010),
 	('Best', 2018),
 	('Love', 2019),
@@ -85,9 +85,9 @@ VALUES
 	('New', 2020),
 	('People choice', 2015),
 	('Musical Taste', 2017);
-	
+
 INSERT INTO albumartist (album_id, artist_id)
-VALUES 
+VALUES
 	(1, 1),
 	(2, 2),
 	(3, 3),
@@ -103,9 +103,9 @@ VALUES
 	(13, 13),
 	(14, 14),
 	(15, 15);
-	
+
 INSERT INTO genreartist (genre_id, artist_id)
-VALUES 
+VALUES
 	(1, 1),
 	(1, 2),
 	(1, 3),
@@ -120,8 +120,9 @@ VALUES
 	(4, 12),
 	(5, 13),
 	(5, 14),
-	(5, 15);
-	
+	(5, 15),
+	(5, 2);
+
 INSERT INTO trackcollection (collection_id, track_id)
 VALUES
 	(1, 3),
